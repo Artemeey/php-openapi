@@ -1,8 +1,8 @@
 {
-	"name": "cebe/php-openapi",
-	"description": "Read and write OpenAPI yaml/json files and make the content accessable in PHP objects.",
+	"name": "artemeey/php-openapi",
+	"description": "Read and write OpenAPI yaml/json files and make the content accessable in PHP objects. Fork of cebe/php-openapi with PHP 8.5 support.",
 	"keywords": ["openapi"],
-	"homepage": "https://github.com/cebe/php-openapi#readme",
+	"homepage": "https://github.com/Artemeey/php-openapi#readme",
 	"type": "library",
 	"license": "MIT",
 	"authors": [
@@ -14,8 +14,8 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/cebe/php-openapi/issues",
-		"source": "https://github.com/cebe/php-openapi"
+		"issues": "https://github.com/Artemeey/php-openapi/issues",
+		"source": "https://github.com/Artemeey/php-openapi"
 	},
 	"require": {
 		"php": ">=7.1.0",
