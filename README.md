@@ -1,15 +1,14 @@
 # php-openapi
 
-> **Maintained fork — published on Packagist as
-> [`artemeey/php-openapi`](https://packagist.org/packages/artemeey/php-openapi).**
+> **Maintained fork of [`cebe/php-openapi`](https://github.com/cebe/php-openapi), published on
+> Packagist as [`artemeey/php-openapi`](https://packagist.org/packages/artemeey/php-openapi).**
 >
-> It is a drop-in replacement for `cebe/php-openapi` (the `cebe\openapi\*` namespaces are
-> unchanged) which ships the PHP 8.4/8.5 deprecation fixes that upstream has not released yet.
+> Drop-in replacement: same `cebe\openapi\*` namespace, same public API. It only adds the PHP 8.4/8.5
+> deprecation fixes that upstream has not released yet.
 >
 > - Install: `composer require artemeey/php-openapi`
-> - Upstream patch: https://github.com/cebe/php-openapi/pull/259
 > - Changes in this fork: [CHANGELOG.md](CHANGELOG.md)
-> - Once that patch is merged and released upstream, this fork can be dropped again.
+> - Upstream patch under review: [cebe/php-openapi#259](https://github.com/cebe/php-openapi/pull/259)
 
 Read and write [OpenAPI](https://www.openapis.org/) 3.0.x YAML and JSON files and make the content accessible in PHP objects.
 
@@ -28,7 +27,23 @@ The upstream package, without the PHP 8.4/8.5 fixes, is still available as `cebe
 
 ## Requirements
 
-- PHP 7.1 or higher (works fine with PHP 8)
+- PHP 7.1 or higher (PHP 8.4 and 8.5 are supported, see [CHANGELOG.md](CHANGELOG.md))
+
+## Differences from upstream
+
+Only two things differ from `cebe/php-openapi`:
+
+- implicit nullable parameter types are explicit (`?Type $x = null`), so PHP 8.4/8.5 do not emit
+  `E_DEPRECATED` notices on load — same signatures, same accepted arguments, no BC break;
+- the Composer package name is `artemeey/php-openapi`, which makes the same code installable from
+  Packagist while the upstream patch is not merged.
+
+Features, docs and tests come from upstream unchanged.
+
+## Releases
+
+Git tags in this repository are the versions published on Packagist; every release is described in
+[CHANGELOG.md](CHANGELOG.md).
 
 ## Used by
 
