@@ -1,17 +1,30 @@
 # php-openapi
 
+> **Maintained fork — published on Packagist as
+> [`artemeey/php-openapi`](https://packagist.org/packages/artemeey/php-openapi).**
+>
+> It is a drop-in replacement for `cebe/php-openapi` (the `cebe\openapi\*` namespaces are
+> unchanged) which ships the PHP 8.4/8.5 deprecation fixes that upstream has not released yet.
+>
+> - Install: `composer require artemeey/php-openapi`
+> - Upstream patch: https://github.com/cebe/php-openapi/pull/259
+> - Changes in this fork: [CHANGELOG.md](CHANGELOG.md)
+> - Once that patch is merged and released upstream, this fork can be dropped again.
+
 Read and write [OpenAPI](https://www.openapis.org/) 3.0.x YAML and JSON files and make the content accessible in PHP objects.
 
 It also provides a CLI tool for validating and converting OpenAPI 3.0.x Description files.
 
-[![Latest Stable Version](https://poser.pugx.org/cebe/php-openapi/v/stable)](https://packagist.org/packages/cebe/php-openapi)
-[![Total Downloads](https://poser.pugx.org/cebe/php-openapi/downloads)](https://packagist.org/packages/cebe/php-openapi)
-[![Build Status](https://github.com/cebe/php-openapi/workflows/CI/badge.svg)](https://github.com/cebe/php-openapi/actions)
+[![Latest Stable Version](https://poser.pugx.org/artemeey/php-openapi/v/stable)](https://packagist.org/packages/artemeey/php-openapi)
+[![Total Downloads](https://poser.pugx.org/artemeey/php-openapi/downloads)](https://packagist.org/packages/artemeey/php-openapi)
+[![Build Status](https://github.com/Artemeey/php-openapi/actions/workflows/php.yml/badge.svg)](https://github.com/Artemeey/php-openapi/actions/workflows/php.yml)
 
 
 ## Install
 
-    composer require cebe/php-openapi
+    composer require artemeey/php-openapi
+
+The upstream package, without the PHP 8.4/8.5 fixes, is still available as `cebe/php-openapi`.
 
 ## Requirements
 
